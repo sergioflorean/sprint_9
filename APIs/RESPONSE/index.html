@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Star Wars</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <img
+          src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_logo-eng.svg"
+          alt=""
+          class="header__logo"
+        />
+        <p class="header__logo-sub">Star Wars</p>
+      </div>
+    </header>
+    <form name="search" class="form form_type_search">
+      <h3 class="form__title">¿Qué es lo que buscas?</h3>
+      <div class="form__wrapper">
+        <div class="form__select-container">
+          <select name="entity" class="form__select form__select_type_entity">
+            <option value="people" selected>Personas</option>
+            <option value="planets">Planetas</option>
+            <option value="starships">Naves espaciales</option>
+          </select>
+        </div>
+        <input
+          type="number"
+          name="entityId"
+          placeholder="Introduce un número"
+          class="form__input form__input_type_entity-id"
+        />
+        <button class="form__btn">Buscar</button>
+      </div>
+    </form>
+    <main class="container">
+      <div class="spinner"><i></i></div>
+      <div class="content">
+        <p class="content__result"></p>
+        <p class="content__error"></p>
+      </div>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
