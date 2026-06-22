@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mi diario secreto</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <img
+          src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_logo-eng.svg"
+          alt=""
+          class="header__logo"
+        />
+        <p class="header__logo-sub">Blog</p>
+      </div>
+    </header>
+    <form name="post" class="form">
+      <h3>Nueva publicación</h3>
+      <div class="input">
+        <input
+          type="text"
+          name="title"
+          placeholder="Title"
+          class="input__text"
+        />
+        <input type="text" name="text" placeholder="Text" class="input__text" />
+        <button class="input__btn">Agregar</button>
+      </div>
+    </form>
+    <main class="container"></main>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
